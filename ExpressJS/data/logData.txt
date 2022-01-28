@@ -1,0 +1,28 @@
+[
+  {
+    "methodName": "GET",
+    "urlVisited": "/products",
+    "dateVisitied": "Fri Jan 28 2022"
+  }
+]
+[
+  {
+    "methodName": "GET",
+    "urlVisited": "/products",
+    "dateVisitied": "Fri Jan 28 2022"
+  }
+]
+[
+  {
+    "methodName": "GET",
+    "urlVisited": "/products/productsearch",
+    "dateVisitied": "Fri Jan 28 2022"
+  }
+]
+[
+  {
+    "methodName": "GET",
+    "urlVisited": "/home",
+    "dateVisitied": "Fri Jan 28 2022"
+  }
+]
