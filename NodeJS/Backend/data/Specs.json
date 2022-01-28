@@ -1,0 +1,13 @@
+[
+  {
+    "uptime": 276030,
+    "type": "Windows_NT",
+    "release": "10.0.22000",
+    "totalMemory": 8424574976,
+    "freeMemory": 2370699264,
+    "architecture": "x64",
+    "platform": "win32",
+    "hostname": "LAPTOP-MDO5F36G",
+    "version": "Windows 10 Home Single Language"
+  }
+]
