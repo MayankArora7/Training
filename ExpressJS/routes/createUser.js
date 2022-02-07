@@ -3,12 +3,18 @@ const router = express.Router()
 const User = require("../models/userModel")
 const logger = require("../middleware/logger")
 
+/*  Hashing the password for security*/
+const bcrypt=require("bcrypt")
+
 // router.post("/signup", logger, (req, res) => {
 
 /* aysnc and await. Also use try catch with this*/
 router.post("/signup", logger, async(req, res) => {
     const data = req.body
     console.log(data)
+
+    /* Stroring hashed password to data.password so that we can send it to DB */
+    data.password = await bcrypt.hash(data.password, 7)
     try {
         const user1 = new User({
             email: data.email,

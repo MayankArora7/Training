@@ -2,18 +2,26 @@ const express = require("express")
 const router = express.Router()
 const User = require("../models/userModel")
 const logger = require("../middleware/logger")
+const authorize = require("../middleware/authorize")
 
 /* localhost:3001/findall */
-router.get("/findall", async(req, res) => {
+// router.get("/findall", async(req, res) => {
     /* This will find everything */
     // const result = await User.find()
+    // console.log(result)
     // res.send(result)
 
     /* This will also find everything but '_id' and 'password' won't be sent in response*/
     /* findAll */
-    const result = await User.find({}, {_id: 0, password: 0})
-    console.log(result)
-    res.send(result)
+    // const result = await User.find({}, {_id: 0, password: 0})
+    // console.log(result)
+    // res.send(result)
+
+    /* JWT */
+    router.get("/findall", authorize, async(req,res) => {
+        const result = await User.find()
+        console.log(result)
+        res.send(result)
 })
 
 /* localhost:3001/findone */

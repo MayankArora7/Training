@@ -29,4 +29,8 @@ app.use("/", update)
 const deleteUser = require("./routes/deleteUser")
 app.use("/", deleteUser)
 
+/* localhost:3001/signin */
+const signin = require("./routes/signinUser")
+app.use("/",signin)
+
 app.listen(3001, () => console.log("Server started"))
