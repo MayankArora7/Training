@@ -1,0 +1,6 @@
+1.Explain devops.Mention the devops stages and tools.
+2.What is docker? explain the architecture & the components of docker.
+3.What is kubernetes? Explain the features of kubernetes.
+4.Demonstrate docker & kubernetes with screenshots.
+
+
