@@ -4,3 +4,5 @@
 /ExpressJS/node_modules/
 /ExpressJS/package.json
 /ExpressJS/package-lock.json
+/Python/.ipynb_checkpoints/
+/Python/.jovianrc"
